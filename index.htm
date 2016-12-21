@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>JQuery 3D Rotate</title>
+	<style type="text/css">
+		.screen {
+			user-select: none;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/rotate.js" type="text/javascript"></script>
+</head>
+	<body>
+		<div class='photo_3d'></div>
+	</body>
+
+	<script type="application/javascript">
+		$(document).on('ready', function() {
+			$('.photo_3d').rotate3d({
+				'source': 'img/',
+				'count' : 22,
+			});
+		});
+	</script>
+</html>
